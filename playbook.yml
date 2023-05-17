@@ -1,0 +1,4 @@
+- name: play1
+  hosts: web_servers
+  roles:
+    - web

@@ -1,0 +1,5 @@
+package_name: nginx
+my_files: 
+  - style.css
+  - script.js
+user: Ansible

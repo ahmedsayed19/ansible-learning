@@ -1,0 +1,11 @@
+- name: install package
+  apt:
+    name: "{{ package_name }}"
+    state: latest
+  notify: copying_handler
+
+- name: copying
+  copy: 
+    src: "{{ item }}"
+    dest: /var/www/html/{{ item }}
+  loop: "{{ my_files }}"
